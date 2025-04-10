@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    /* White */
+    color: #333;
+    /* Black */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFDB58;
+    /* Mustard */
+    color: black;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    /* Black */
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #444;
+    /* Darker Black */
+}
+
+/* Form Styling */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: white;
+    /* White */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+form select,
+form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid #333;
+    /* Black */
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #FFDB58;
+    /* Mustard */
+    color: black;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #B8860B;
+    /* Darker Mustard */
+}
+
+form input[type="url"] {
+    width: 100%;
+}
+
+form input[type="text"] {
+    width: 100%;
+}
+
+/* Alert or Instructions */
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    color: #333;
+    /* Black */
+}
+
+.feedback-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-align: center;
+    display: none;
+    /* Initially hidden */
+}
+
+.feedback-message.success {
+    background-color: #d4edda;
+    /* Light Green */
+    color: #155724;
+    /* Dark Green */
+    border: 1px solid #c3e6cb;
+    /* Green Border */
+}
+
+.feedback-message.error {
+    background-color: #f8d7da;
+    /* Light Red */
+    color: #721c24;
+    /* Dark Red */
+    border: 1px solid #f5c6cb;
+    /* Red Border */
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 90%;
+        padding: 1rem;
+        box-shadow: none;
+        /* Remove shadow for simplicity */
+        border-radius: 0;
+        /* Remove rounded corners */
+    }
+
+    form button {
+        font-size: 1rem;
+        padding: 0.8rem;
+        width: 100%;
+        /* Full-width button on mobile */
+    }
+}
+
+form select,
+form input,
+form button {
+    outline-color: #FFDB58;
+    /* Mustard Outline */
+    outline-offset: 2px;
+}

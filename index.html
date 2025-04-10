@@ -1,0 +1,80 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maths Literacy</title>
+    <link rel="stylesheet" href="ml.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Maths Literacy Portal</h1>
+        <p>Select a Grade</p>
+    </header>
+
+    <main>
+        <div class="grade-container">
+            <a href="grades.html" class="grade-card">Grade 10</a>
+            <a href="grades.html" class="grade-card">Grade 11</a>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<!-- ml.css -->
+<style>
+    :root {
+        --mustard: #FFDB58;
+        --black: #000000;
+        --white: #ffffff;
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: var(--white);
+        color: var(--black);
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: var(--mustard);
+        color: var(--black);
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .grade-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    .grade-card {
+        background-color: var(--black);
+        color: var(--mustard);
+        text-decoration: none;
+        padding: 2rem;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease;
+        width: 200px;
+        text-align: center;
+    }
+
+    .grade-card:hover {
+        transform: scale(1.05);
+        background-color: #222;
+    }
+</style>
+<script src="main.js"></script>
+
+</html>

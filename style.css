@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    /* White */
+    color: #333;
+    /* Black */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FFDB58;
+    /* Mustard */
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+strong{
+    color: black;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    /* Black */
+}
+
+/* Card Layout for Terms and Files */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Standard Card */
+.card {
+    padding: 1rem;
+    border: 1px solid #333;
+    /* Black */
+    border-radius: 10px;
+    background-color: #FFDB58;
+    /* Mustard */
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.file-title {
+    word-break: break-word;
+    font-size: 0.95rem;
+    color: #333;
+    /* Black */
+    margin-bottom: 0.5rem;
+}
+
+.download-link {
+    font-weight: bold;
+    color: #333;
+    /* Black */
+    text-decoration: none;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+/* "No files" / "Files uploaded" messages */
+.file-status-card {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #333;
+    /* Black */
+    border-radius: 10px;
+    background-color: #FFDB58;
+    /* Mustard */
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    /* Black */
+    transition: transform 0.2s ease;
+    text-decoration: none;
+}
+
+.file-status-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
+}
+
+/* Ensure that 'Files Uploaded' link inside the file-status-card is black */
+.file-status-card a {
+    color: #333;
+    /* Black */
+    text-decoration: none;
+}
+
+.file-status-card a:hover {
+    text-decoration: underline;
+}
+
+/* Button and form styles */
+button,
+input[type="text"],
+input[type="url"],
+select {
+    padding: 0.5rem;
+    border: 1px solid #333;
+    /* Black */
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+button {
+    background-color: #FFDB58;
+    /* Mustard */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B8860B;
+    /* Darker mustard */
+}
+
+.feedback-message {
+    padding: 1rem;
+    background-color: #FFDB58;
+    /* Mustard */
+    border: 1px solid #333;
+    /* Black */
+    margin-top: 1rem;
+    border-radius: 5px;
+    color: #333;
+    /* Black */
+    text-align: center;
+}
+
+.feedback-message.success {
+    color: green;
+}

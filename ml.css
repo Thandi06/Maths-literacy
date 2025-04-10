@@ -1,0 +1,157 @@
+/* ml.css - Styles for Maths Literacy App */
+
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fff;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #f4c542;
+    /* Mustard */
+    color: black;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Main Content Container */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Card Grid */
+.grade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+/* Grade Cards */
+.grade-card {
+    border: 2px solid #f4c542;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.grade-card:hover {
+    transform: scale(1.05);
+    background-color: #333;
+}
+
+/* Section Headings */
+h2 {
+    margin-bottom: 1rem;
+    color: #f4c542;
+}
+
+/* Upload + Login Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+form input,
+form select {
+    padding: 0.7rem;
+    margin-top: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #f4c542;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+form button:hover {
+    background-color: #e6b800;
+}
+
+/* Feedback messages */
+.feedback-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+.feedback-message.success {
+    background-color: #dff2bf;
+    color: #4f8a10;
+    border: 1px solid #4f8a10;
+}
+
+.feedback-message.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+/* Link Styling */
+a {
+    color: #f4c542;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Back link styling */
+.back-link {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .grade-card {
+        padding: 1.5rem;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+}
