@@ -2,16 +2,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    /* White */
     color: #333;
-    /* Black */
     margin: 0;
     padding: 0;
 }
 
 header {
     background-color: #FFDB58;
-    /* Mustard */
     color: black;
     padding: 1rem 0;
     text-align: center;
@@ -31,26 +28,24 @@ nav a {
     font-weight: bold;
     padding: 0.5rem 1rem;
     background-color: #333;
-    /* Black */
     border-radius: 4px;
 }
 
 nav a:hover {
     background-color: #444;
-    /* Darker Black */
 }
 
-/* Form Styling */
+/* Form Container */
 main {
     max-width: 600px;
     margin: 2rem auto;
     background-color: white;
-    /* White */
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
@@ -61,50 +56,39 @@ form label {
     margin-top: 1rem;
 }
 
+/* Unified input, select, textarea styling */
+form input,
 form select,
-form input {
-    padding: 0.8rem;
+form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
     font-size: 1rem;
-    margin-top: 0.5rem;
-    border: 1px solid #333;
-    /* Black */
-    border-radius: 4px;
+    box-sizing: border-box;
 }
 
+/* Button Styling */
 form button {
-    background-color: #FFDB58;
-    /* Mustard */
+    background: #FFDB58;
     color: black;
+    padding: 0.75rem 1rem;
     border: none;
-    padding: 1rem;
-    font-size: 1.1rem;
-    margin-top: 1.5rem;
+    border-radius: 6px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
     cursor: pointer;
-    border-radius: 4px;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
 }
 
 form button:hover {
-    background-color: #B8860B;
-    /* Darker Mustard */
+    background: #B8860B;
 }
 
-form input[type="url"] {
-    width: 100%;
-}
-
-form input[type="text"] {
-    width: 100%;
-}
-
-/* Alert or Instructions */
-p {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-top: 2rem;
-    color: #333;
-    /* Black */
-}
-
+/* Feedback Message Styling */
 .feedback-message {
     margin-top: 1rem;
     padding: 1rem;
@@ -112,49 +96,44 @@ p {
     font-size: 1rem;
     text-align: center;
     display: none;
-    /* Initially hidden */
 }
 
 .feedback-message.success {
     background-color: #d4edda;
-    /* Light Green */
     color: #155724;
-    /* Dark Green */
     border: 1px solid #c3e6cb;
-    /* Green Border */
 }
 
 .feedback-message.error {
     background-color: #f8d7da;
-    /* Light Red */
     color: #721c24;
-    /* Dark Red */
     border: 1px solid #f5c6cb;
-    /* Red Border */
 }
 
+/* Paragraph Styling */
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    color: #333;
+}
+
+/* Responsive Styling */
 @media screen and (max-width: 600px) {
     main {
         width: 90%;
         padding: 1rem;
         box-shadow: none;
-        /* Remove shadow for simplicity */
         border-radius: 0;
-        /* Remove rounded corners */
     }
 
     form button {
         font-size: 1rem;
         padding: 0.8rem;
         width: 100%;
-        /* Full-width button on mobile */
     }
 }
 
-form select,
-form input,
-form button {
-    outline-color: #FFDB58;
-    /* Mustard Outline */
-    outline-offset: 2px;
+.fix {
+    padding: 0.75rem 1rem;
 }
